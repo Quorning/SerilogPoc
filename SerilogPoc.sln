@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApiWithSeriLog", "WebApi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceProxy", "ServiceProxy\ServiceProxy.csproj", "{EBA62CCD-6189-465F-88C0-37C951207193}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "DAta\Data.csproj", "{20892938-3813-4136-AE0B-4CFDF01B595A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{20892938-3813-4136-AE0B-4CFDF01B595A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions Items", "Solutions Items", "{96021BDC-7604-4C74-B330-D8451F69F652}"
 	ProjectSection(SolutionItems) = preProject
