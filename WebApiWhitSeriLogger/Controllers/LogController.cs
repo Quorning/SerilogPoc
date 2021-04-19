@@ -1,5 +1,5 @@
 ﻿using Contract;
-using Contract.Request;
+//using Contract.Request;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using Domain.Serivces;
@@ -23,7 +23,19 @@ namespace WebApiWithSeriLog.Controllers
         {
             _testLogningService.TestLog();
 
-            return new LogResponse();
+            return new LogResponse()
+            {
+                Prop1 = new Prop1()
+                {
+                    Prop11 = "Prop11",
+                    Prop12 = "Prop12"
+                },
+                Prop2 = new Prop2()
+                {
+                Prop21 = "Prop21",
+                Prop22 = "Prop22"
+                }
+            };
         }
     }
 }

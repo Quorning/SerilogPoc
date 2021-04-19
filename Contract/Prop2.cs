@@ -5,5 +5,4 @@
         public string Prop21 { get; set; }
         public string Prop22 { get; set; }
     }
-
 }

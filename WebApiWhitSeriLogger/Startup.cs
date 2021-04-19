@@ -33,6 +33,9 @@ namespace WebApiWhitSeriLog
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "WebApiWithSeriLogger", Version = "v1" });
             });
 
+            Serilog.Debugging.SelfLog.Enable(System.Console.Out);
+            System.Threading.Thread.Sleep(3000);
+
             services.AddHttpContextAccessor();
             services.AddInfrastructure();
             services.AddDomaine();

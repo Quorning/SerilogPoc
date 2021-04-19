@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection;
 using Domain.ServiceAgents;
 using Infrastructure.Logging;
 using Infrastructure.Transformation;
@@ -50,7 +49,7 @@ namespace Data.Yyyy
 
             LogRequest(service, operation, request);
 
-            System.Threading.Thread.Sleep(1750);
+            //System.Threading.Thread.Sleep(1750);
             var response = _yyyyClient.TestOperation(request);
 
             LogRespons(service, operation, stopwatch, response);

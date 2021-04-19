@@ -3,7 +3,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using System;
 using Serilog;
-using System.Reflection;
 using Serilog.Core;
 
 namespace WebApiWhitSeriLog
@@ -57,10 +56,15 @@ namespace WebApiWhitSeriLog
 
             return new LoggerConfiguration()
                 .ReadFrom.Configuration(configuration)
-                .Enrich.FromLogContext()
+                //.Enrich.FromLogContext()
+                //.WriteTo.Console()
+                //.WriteTo.EventCollector(
+                //    splunkHost: "https://splunk-collector.corp.jyskebank.net",
+                //    eventCollectorToken: "3cdb070a-c9ae-47e7-820b-7dd623cd1948",
+                //    uriPath: "services/collector/event",
+                //    index: "jr_ei_test",
+                //    sourceType: "_json",
                 //.WriteTo.Console(
-                //    formatter: new JsonFormatter(renderMessage: true))
-                //.WriteTo.Debug(
                 //    formatter: new JsonFormatter(renderMessage: true))
                 //.WriteTo.File(
                 //    formatter: new JsonFormatter(renderMessage: true),

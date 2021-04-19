@@ -50,7 +50,7 @@ namespace Data.Xxxx
 
             LogRequest(api, operation, request);
 
-            System.Threading.Thread.Sleep(2150);
+            //System.Threading.Thread.Sleep(2150);
             var response = _xxxxClient.TestOperation(request);
 
             LogRespons(api, operation, stopwatch, response);
